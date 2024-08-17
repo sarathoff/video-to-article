@@ -7,8 +7,7 @@ You are a highly talented article writer. Create an article with a headline like
 """
 
 st.title("Video to Article Converter")
-linkedin_profile_url = 'https://www.linkedin.com/in/devasheeshchopra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-st.write(f"Developed by: [Dev Asheesh Chopra]({linkedin_profile_url})")
+st.write('developed by Gen AI tools')
 youtube_link = st.text_input("Enter YouTube Video Link:")
 
 if st.button("Generate Article"):
