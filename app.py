@@ -1,14 +1,9 @@
 import streamlit as st
-from dotenv import load_dotenv
-import os
 import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 
-# Load all environment variables
-load_dotenv()
-
 # Configure the API key for Google Generative AI
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key="AIzaSyAW7LpbQSJJDQv4t_leWEJEu4LorMvtgsk")
 
 # Define the prompt template
 prompt_template = """You are an AI content writer. Your task is to take the transcript from this YouTube video and convert it into an amazing, super-structured article. The article should be engaging, well-organized, and highlight the key points in a way that's easy for readers to understand. Here is the transcript: """
